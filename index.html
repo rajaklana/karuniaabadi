@@ -1,0 +1,983 @@
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Karunia Abadi | Spesialis Tenda Sejak 2004</title>
+
+  <!-- ======= Google Font ======= -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet" />
+
+  <!-- ======= Vendor Styles ======= -->
+  <link href="assets/vendors/bootstrap/bootstrap.min.css" rel="stylesheet" />
+  <link href="assets/vendors/bootstrap-icons/font/bootstrap-icons.min.css" rel="stylesheet" />
+  <link href="assets/vendors/glightbox/glightbox.min.css" rel="stylesheet" />
+  <link href="assets/vendors/swiper/swiper-bundle.min.css" rel="stylesheet" />
+  <link href="assets/vendors/aos/aos.css" rel="stylesheet" />
+ <!-- ======= Javascripts =======-->
+    <script src="assets/vendors/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendors/gsap/gsap.min.js"></script>
+    <script src="assets/vendors/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/vendors/isotope/isotope.pkgd.min.js"></script>
+    <script src="assets/vendors/glightbox/glightbox.min.js"></script>
+    <script src="assets/vendors/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendors/aos/aos.js"></script>
+    <script src="assets/vendors/purecounter/purecounter.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <!-- <script src="assets/js/send_email.js"></script> -->
+    <!-- End JavaScripts-->
+  <!-- ======= Theme Style ======= -->
+  <link href="assets/css/style.css" rel="stylesheet" />
+
+  <!-- ======= Custom Style Tambahan ======= -->
+  <style>
+    .hover-glow {
+      transition: all 0.3s ease;
+    }
+    .hover-glow:hover {
+      color: #f9d423 !important;
+      text-shadow: 0 0 8px rgba(255, 255, 255, 0.7);
+      transform: scale(1.05);
+    }
+
+    /* Logo Klien */
+    .logo-circle {
+      width: 80px;
+      height: 80px;
+      margin: 0 auto;
+      padding: 6px;
+      background-color: white;
+      border-radius: 50%;
+      overflow: hidden;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s;
+    }
+    .logo-circle img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+    .logo-circle:hover {
+      transform: scale(1.1);
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    }
+    .logo-label {
+      font-size: 14px;
+      color: #333;
+      margin-top: 0.5rem;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4), -1px -1px 1px rgba(255, 255, 255, 0.6);
+    }
+    .logo-label.small {
+      font-size: 12px;
+    }
+    .logo-circle.small {
+      width: 60px;
+      height: 60px;
+      padding: 4px;
+    }
+
+    .text-gradient {
+      background: linear-gradient(to right, #f9d423, #ff4e50);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  </style>
+
+  <!-- ======= Apply Theme Script Early ======= -->
+  <script>
+    (function () {
+      const storedTheme = localStorage.getItem('theme') || 'light';
+      document.documentElement.setAttribute('data-bs-theme', storedTheme);
+    })();
+  </script>
+  <script>
+  const limasImages = [
+    'assets/images/produk/limas.png',
+    'assets/images/produk/limas2.jpeg',
+  ];
+  let currentLimasIndex = 0;
+
+  function changeImageLimas(index) {
+    currentLimasIndex = index;
+    document.getElementById('mainImageLimas').src = limasImages[index];
+  }
+
+  // Auto switch every 3s
+  setInterval(() => {
+    currentLimasIndex = (currentLimasIndex + 1) % limasImages.length;
+    document.getElementById('mainImageLimas').src = limasImages[currentLimasIndex];
+  }, 3000);
+</script>
+
+</head>
+
+
+    
+    <!-- ======= Site Wrap =======-->
+    <div class="site-wrap">
+      
+      
+    <!-- ======= Header Responsive Modern ======= -->
+<header class="navbar navbar-expand-lg fixed-top shadow-sm"
+        style="background: rgba(15, 15, 15, 0.9); backdrop-filter: blur(10px); z-index: 1050;">
+  <div class="container">
+
+    <!-- Logo -->
+    <a class="navbar-brand d-flex align-items-center" href="index.html">
+      <img src="assets/images/headerlogo.jpg"
+           alt="Karunia Abadi"
+           class="me-2"
+           height="42"
+           style="border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.4);" />
+      <span class="fw-bold fs-4"
+            style="background: linear-gradient(135deg, #f9d423, #ff4e50);
+                   -webkit-background-clip: text;
+                   background-clip: text;
+                   -webkit-text-fill-color: transparent;">
+        Karunia Abadi
+      </span>
+    </a>
+
+    <!-- Hamburger Toggle -->
+    <button class="navbar-toggler text-white border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu">
+      <i class="bi bi-list fs-1"></i>
+    </button>
+
+    <!-- Nav Menu -->
+    <div class="collapse navbar-collapse justify-content-end" id="navbarMenu">
+      <ul class="navbar-nav align-items-center text-center text-lg-start">
+        <li class="nav-item">
+          <a class="nav-link text-white fw-semibold px-3 hover-glow" href="#home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white fw-semibold px-3 hover-glow" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white fw-semibold px-3 hover-glow" href="#product">Product</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white fw-semibold px-3 hover-glow" href="#project">Project</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white fw-semibold px-3 hover-glow" href="#contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+</header>
+
+
+
+
+        <br>
+      <!-- ======= Main =======-->
+      <main> 
+     
+      <br>
+        
+        <!-- ======= produk Section ======= -->
+<section class="produk__karunia section py-5" id="home" style="
+  background: url('assets/images/lalapo.jpg') center center / cover no-repeat;
+  background-attachment: fixed;
+">
+  <div class="container">
+    <div class="row align-items-stretch">
+      
+      <!-- TEXT -->
+      <div class="col-lg-6 mb-5 mb-lg-0 h-100 d-flex">
+        <div class="p-4 rounded-4 w-100" style="background-color: rgba(29, 17, 17, 0.2); backdrop-filter: blur(2px);">
+          <h1 class="display-5 fw-bold mb-4 text-light" data-aos="fade-up" data-aos-delay="100">
+            CV. Karunia Abadi<br>
+            Ahlinya Segala Jenis Tenda Sejak 2004
+          </h1>
+          <p class="lead fs-5 text-light" data-aos="fade-up" data-aos-delay="200">
+            Berdiri di Surabaya sejak tahun 2004, <strong>CV. Karunia Abadi</strong> adalah perusahaan terpercaya dalam pembuatan dan penyediaan berbagai jenis tenda: Tenda Cafe, Tenda Terop, Canopy, Tenda Sarnafil, Payung Taman, Tenda Haji, Tenda VIP, dan masih banyak lagi.
+          </p>
+          <p class="text-light mt-3" data-aos="fade-up" data-aos-delay="300">
+            Kami melayani pemesanan custom dan partai besar dengan kualitas terbaik dan layanan profesional.
+          </p>
+        </div>
+      </div>
+
+      <!-- IMAGE -->
+      <div class="col-lg-6 h-100 d-flex" data-aos="zoom-in" data-aos-delay="400">
+        <img src="assets/images/home.jpg" class="img-fluid rounded-4 shadow w-100 h-100" alt="Tenda Karunia Abadi" style="object-fit: cover;">
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+        
+       <!-- ======= About Section with Embossed Text & Equal Height Columns ======= -->
+<section class="about__karunia section" id="about">
+  <div class="container">
+    <div class="row align-items-stretch">
+      
+      <!-- Image Column -->
+      <div class="col-lg-6 mb-4 mb-lg-0 d-flex align-items-stretch" data-aos="fade-right">
+        <div class="img-wrap position-relative text-center w-100 rounded-4 shadow-sm p-3 bg-white bg-opacity-75">
+          <img class="img-fluid rounded-4 shadow mb-3 w-100" src="assets/images/tentangkami (2).jpg" alt="Tenda Karunia Abadi" style="object-fit: cover; aspect-ratio: 4/3;">
+          <p class="text-muted fst-italic px-3">
+            Salah satu produk unggulan CV. Karunia Abadi – dirancang untuk kebutuhan acara outdoor, promosi, hingga pelindung cuaca dengan material kuat dan desain elegan.
+          </p>
+        </div>
+      </div>
+
+      <!-- Text Column -->
+      <div class="col-lg-6 d-flex align-items-stretch" data-aos="fade-left">
+        <div class="bg-white bg-opacity-75 rounded-4 shadow-sm p-4 w-100">
+          <!-- Embossed Effect Title -->
+          <span class="text-uppercase fw-semibold mb-3 d-block text-primary" style="letter-spacing: 2px;">Tentang Kami</span>
+          
+          <h2 class="fw-bold display-6 mb-4" style="
+              background: linear-gradient(145deg, #1f1f1f, #3a3a3a);
+              -webkit-background-clip: text;
+              background-clip: text;
+              -webkit-text-fill-color: transparent;
+              text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+            ">
+            CV. Karunia Abadi
+          </h2>
+
+          <p class="fs-5 text-muted">
+            Berdiri sejak tahun 2004 di Surabaya, <strong>CV. Karunia Abadi</strong> telah menjadi spesialis dalam produksi dan penyediaan berbagai jenis tenda berkualitas tinggi seperti:
+          </p>
+
+          <p class="fs-6 text-muted mb-4">
+            Tenda Café, Tenda Sarnafil, Tenda Kerucut, Tenda Acara, Tenda Pleton, Canopy, dan Payung Taman.
+            <br><br>
+            Dengan mengutamakan <strong>kualitas, desain custom, dan pelayanan profesional</strong>, kami telah melayani berbagai kebutuhan dari instansi, perusahaan, hingga individu di seluruh Indonesia.
+          </p>
+
+          <ul class="list-unstyled d-flex flex-wrap gap-3">
+            <li class="d-flex align-items-center">
+              <i class="bi bi-check-circle-fill text-success me-2"></i> Berpengalaman Sejak 2004
+            </li>
+            <li class="d-flex align-items-center">
+              <i class="bi bi-check-circle-fill text-success me-2"></i> Produk Berkualitas & Tahan Lama
+            </li>
+            <li class="d-flex align-items-center">
+              <i class="bi bi-check-circle-fill text-success me-2"></i> Desain Custom Sesuai Kebutuhan
+            </li>
+            <li class="d-flex align-items-center">
+              <i class="bi bi-check-circle-fill text-success me-2"></i> Pengiriman ke Seluruh Indonesia
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- ======= End About Section ======= -->
+
+<!-- ======= Produk Tenda ======= -->
+
+<section id="product" class="section py-5 bg-light">
+  <div class="container">
+    <div class="text-center mb-5">
+      <span class="text-uppercase text-primary fw-semibold" style="letter-spacing: 2px;" data-aos="fade-up">Produk Kami</span>
+      <h2 class="display-6 fw-bold" data-aos="fade-up" data-aos-delay="100">
+        Spesialis Tenda Berkualitas Sejak 2004
+      </h2>
+      <p class="text-muted mt-3" data-aos="fade-up" data-aos-delay="200">
+        Kami menghadirkan berbagai jenis tenda dengan desain eksklusif dan material terbaik, cocok untuk kebutuhan event, bisnis, maupun pribadi.
+      </p>
+    </div>
+
+```
+<!-- Template untuk Produk (Ulangi untuk semua item)-->
+<!-- ITEM 1: Tenda Limas -->
+<div class="row align-items-center mb-5" data-aos="zoom-in" data-aos-delay="100">
+  <div class="col-md-6 position-relative">
+    <img id="mainImageLimas" src="assets/images/produk/limas.png" alt="Tenda Limas" class="img-fluid rounded-4 shadow-lg w-100">
+    <div class="d-flex justify-content-center gap-2 mt-3">
+      <img src="assets/images/produk/limas.png" class="thumb-img" onclick="changeImage('Limas', 0)">
+      <img src="assets/images/produk/limas1.jpg" class="thumb-img" onclick="changeImage('Limas', 1)">
+      <img src="assets/images/produk/limas2.jpeg" class="thumb-img" onclick="changeImage('Limas', 2)">
+    </div>
+  </div>
+  <div class="col-md-6 d-flex align-items-center">
+    <div class="bg-white bg-opacity-75 rounded-4 shadow-sm p-4 w-100">
+      <h3 class="fw-bold mb-2">Tenda Limas</h3>
+      <p class="text-muted mb-0">
+        Tenda berbentuk limas dengan gaya klasik yang elegan. Cocok untuk acara kenegaraan, pameran, hingga peluncuran produk. Menggunakan rangka besi galvanis dan kain terpal tahan air serta panas. Dapat dipadukan dengan dekorasi tambahan seperti backdrop, lighting, dan flooring.
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- ITEM 2: Tenda Kerucut -->
+<div class="row align-items-center flex-md-row-reverse mb-5" data-aos="zoom-in" data-aos-delay="200">
+  <div class="col-md-6 position-relative">
+    <img id="mainImageKerucut" src="assets/images/produk/kerucut.png" alt="Tenda Kerucut" class="img-fluid rounded-4 shadow-lg w-100">
+    <div class="d-flex justify-content-center gap-2 mt-3">
+      <img src="assets/images/produk/kerucut.png" class="thumb-img" onclick="changeImage('Kerucut', 0)">
+      <img src="assets/images/produk/kerucut1.jpg" class="thumb-img" onclick="changeImage('Kerucut', 1)">
+      <img src="assets/images/produk/kerucut2.jpg" class="thumb-img" onclick="changeImage('Kerucut', 2)">
+    </div>
+  </div>
+  <div class="col-md-6 d-flex align-items-center">
+    <div class="bg-white bg-opacity-75 rounded-4 shadow-sm p-4 w-100">
+      <h3 class="fw-bold mb-2">Tenda Kerucut</h3>
+      <p class="text-muted mb-0">
+        Desain modern dengan puncak lancip memberikan kesan mewah dan bersih. Ideal digunakan untuk stand UMKM, bazar, expo, atau tenda booth promosi. Fleksibel dalam penataan dan tersedia dalam berbagai ukuran (3x3m, 5x5m, dll).
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- ITEM 3: Terop Pesta -->
+<div class="row align-items-center mb-5" data-aos="zoom-in" data-aos-delay="300">
+  <div class="col-md-6 position-relative">
+    <img id="mainImageWedding" src="assets/images/produk/wedding.webp" alt="Terop Pesta" class="img-fluid rounded-4 shadow-lg w-100">
+    <div class="d-flex justify-content-center gap-2 mt-3">
+      <img src="assets/images/produk/wedding.webp" class="thumb-img" onclick="changeImage('Wedding', 0)">
+      <img src="assets/images/produk/pesta.jpeg" class="thumb-img" onclick="changeImage('Wedding', 1)">
+      <img src="assets/images/produk/pesta1.jpeg" class="thumb-img" onclick="changeImage('Wedding', 2)">
+    </div>
+  </div>
+  <div class="col-md-6 d-flex align-items-center">
+    <div class="bg-white bg-opacity-75 rounded-4 shadow-sm p-4 w-100">
+      <h3 class="fw-bold mb-2">Terop Pesta</h3>
+      <p class="text-muted mb-0">
+        Solusi terbaik untuk acara besar seperti pernikahan, resepsi, atau hajatan. Terop kami dapat dikombinasikan dengan tirai elegan, panggung, kursi, dan lampu gantung. Tersedia dalam model semi-dekorasi atau full-dekorasi sesuai tema acara.
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- ITEM 4: Payung Taman -->
+<div class="row align-items-center flex-md-row-reverse mb-5" data-aos="zoom-in" data-aos-delay="400">
+  <div class="col-md-6 position-relative">
+    <img id="mainImageTaman" src="assets/images/produk/taman.webp" alt="Payung Taman" class="img-fluid rounded-4 shadow-lg w-100">
+    <div class="d-flex justify-content-center gap-2 mt-3">
+      <img src="assets/images/produk/taman.webp" class="thumb-img" onclick="changeImage('Taman', 0)">
+      <img src="assets/images/produk/taman1.jpeg" class="thumb-img" onclick="changeImage('Taman', 1)">
+      <img src="assets/images/produk/taman2.jpeg" class="thumb-img" onclick="changeImage('Taman', 2)">
+    </div>
+  </div>
+  <div class="col-md-6 d-flex align-items-center">
+    <div class="bg-white bg-opacity-75 rounded-4 shadow-sm p-4 w-100">
+      <h3 class="fw-bold mb-2">Payung Taman</h3>
+      <p class="text-muted mb-0">
+        Dirancang khusus untuk kebutuhan café outdoor, taman rumah, atau fasilitas umum. Menggunakan bahan kain tebal anti UV dan waterproof dengan rangka alumunium atau besi kokoh. Tersedia model center pole dan side pole dengan berbagai diameter.
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- ITEM 5: Tenda Custom -->
+<div class="row align-items-center" data-aos="zoom-in" data-aos-delay="500">
+  <div class="col-md-6 position-relative">
+    <img id="mainImageCustom" src="assets/images/produk/custom.webp" alt="Tenda Custom" class="img-fluid rounded-4 shadow-lg w-100">
+    <div class="d-flex justify-content-center gap-2 mt-3">
+      <img src="assets/images/produk/custom.webp" class="thumb-img" onclick="changeImage('Custom', 0)">
+      <img src="assets/images/produk/custom1.jpeg" class="thumb-img" onclick="changeImage('Custom', 1)">
+      <img src="assets/images/produk/custom2.jpeg" class="thumb-img" onclick="changeImage('Custom', 2)">
+    </div>
+  </div>
+  <div class="col-md-6 d-flex align-items-center">
+    <div class="bg-white bg-opacity-75 rounded-4 shadow-sm p-4 w-100">
+      <h3 class="fw-bold mb-2">Tenda Custom</h3>
+      <p class="text-muted mb-0">
+        Khusus bagi Anda yang memiliki kebutuhan desain unik atau ukuran spesifik. Kami melayani pembuatan tenda custom sesuai request: warna brand, bentuk khusus (melengkung, dome, dll), printing logo, hingga sistem knock-down. Gratis konsultasi & survei lokasi.
+      </p>
+    </div>
+  </div>
+</div>
+```
+
+  </div>
+</section>
+<!-- ======= End Produk Tenda ======= -->
+
+<style>
+  .thumb-img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 2px solid #fff;
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease, border 0.3s ease;
+    cursor: pointer;
+  }
+  .thumb-img:hover {
+    transform: scale(1.1);
+    border-color: #f9d423;
+  }
+</style>
+
+<script>
+  const imageData = {
+  Limas: ['assets/images/produk/limas.png', 'assets/images/produk/limas1.jpg', 'assets/images/produk/limas2.jpeg'],
+  Kerucut: ['assets/images/produk/kerucut.png', 'assets/images/produk/kerucut1.jpg', 'assets/images/produk/kerucut2.jpg'],
+  Wedding: ['assets/images/produk/wedding.webp', 'assets/images/produk/pesta.jpeg', 'assets/images/produk/pesta1.jpeg'],
+  Taman: ['assets/images/produk/taman.webp', 'assets/images/produk/taman1.jpeg', 'assets/images/produk/taman2.jpeg'],
+  Custom: ['assets/images/produk/custom.webp', 'assets/images/produk/custom1.jpeg', 'assets/images/produk/custom2.jpeg']
+};
+
+
+  const currentIndex = { Limas: 0, Kerucut: 0, Wedding: 0, Taman: 0, Custom: 0 };
+
+  function changeImage(key, index) {
+    document.getElementById(`mainImage${key}`).src = imageData[key][index];
+    currentIndex[key] = index;
+  }
+
+  setInterval(() => {
+    for (let key in imageData) {
+      currentIndex[key] = (currentIndex[key] + 1) % imageData[key].length;
+      document.getElementById(`mainImage${key}`).src = imageData[key][currentIndex[key]];
+    }
+  }, 3000);
+</script>
+
+
+
+<!-- ======= Proyek Kami ======= -->
+<section id="project" class="section bg-white py-5">
+  <div class="container">
+
+    <!-- Header -->
+    <div class="text-center mb-5">
+      <span class="text-uppercase text-primary fw-semibold" style="letter-spacing: 2px;" data-aos="fade-up">Proyek Kami</span>
+      <h2 class="display-6 fw-bold" data-aos="fade-up" data-aos-delay="100">Hasil Karya Tenda Terbaik</h2>
+      <p class="text-muted mt-3" data-aos="fade-up" data-aos-delay="200">
+        Dokumentasi proyek pemasangan tenda oleh CV. Karunia Abadi untuk berbagai kebutuhan event, promosi, dan instansi di seluruh Indonesia.
+      </p>
+    </div>
+
+    <!-- Grid Proyek -->
+    <div class="row g-4 justify-content-center">
+
+      <!-- Proyek 1 -->
+      <div class="col-md-4" data-aos="zoom-in" data-aos-delay="100">
+        <div class="card border-0 shadow-sm rounded-4 overflow-hidden h-100 d-flex flex-column">
+          <div class="ratio ratio-4x3">
+            <img src="assets/images/proyek/proyek.jpeg" class="img-fluid object-fit-cover w-100 h-100" alt="Tenda Camping">
+          </div>
+          <div class="p-3">
+            <h5 class="fw-bold mb-1">Tenda Camping</h5>
+            <p class="text-muted mb-0">Tenda bulat dengan atap tinggi cocok untuk kegiatan camping di gunung atau dekat laut.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Proyek 2 -->
+      <div class="col-md-4" data-aos="zoom-in" data-aos-delay="150">
+        <div class="card border-0 shadow-sm rounded-4 overflow-hidden h-100 d-flex flex-column">
+          <div class="ratio ratio-4x3">
+            <img src="assets/images/proyek/proyek (7).jpeg" class="img-fluid object-fit-cover w-100 h-100" alt="Tenda UMKM Expo">
+          </div>
+          <div class="p-3">
+            <h5 class="fw-bold mb-1">Tenda Rangka Besi Expo UMKM</h5>
+            <p class="text-muted mb-0">Tenda kerangka baja lebar tanpa sekat untuk keperluan expo dan bazar besar di lapangan.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Proyek 3 -->
+      <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
+        <div class="card border-0 shadow-sm rounded-4 overflow-hidden h-100 d-flex flex-column">
+          <div class="ratio ratio-4x3">
+            <img src="assets/images/proyek/proyek (2).jpeg" class="img-fluid object-fit-cover w-100 h-100" alt="Tenda VIP">
+          </div>
+          <div class="p-3">
+            <h5 class="fw-bold mb-1">Tenda Limas VIP</h5>
+            <p class="text-muted mb-0">Tenda model limas premium dengan tiang dekoratif untuk acara resmi.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Proyek 4 -->
+      <div class="col-md-4" data-aos="zoom-in" data-aos-delay="250">
+        <div class="card border-0 shadow-sm rounded-4 overflow-hidden h-100 d-flex flex-column">
+          <div class="ratio ratio-4x3">
+            <img src="assets/images/proyek/proyek (3).jpeg" class="img-fluid object-fit-cover w-100 h-100" alt="Tenda Pernikahan">
+          </div>
+          <div class="p-3">
+            <h5 class="fw-bold mb-1">Tenda Dekorasi Wedding</h5>
+            <p class="text-muted mb-0">Tenda putih full dekorasi mewah untuk pesta pernikahan outdoor.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Proyek 5 -->
+      <div class="col-md-4" data-aos="zoom-in" data-aos-delay="300">
+        <div class="card border-0 shadow-sm rounded-4 overflow-hidden h-100 d-flex flex-column">
+          <div class="ratio ratio-4x3">
+            <img src="assets/images/proyek/proyek (5).jpeg" class="img-fluid object-fit-cover w-100 h-100" alt="Tenda Café">
+          </div>
+          <div class="p-3">
+            <h5 class="fw-bold mb-1">Tenda Dekorasi Wedding</h5>
+            <p class="text-muted mb-0">Tenda putih full dekorasi mewah untuk pesta pernikahan di taman outdoor.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Proyek 6 -->
+      <div class="col-md-4" data-aos="zoom-in" data-aos-delay="350">
+        <div class="card border-0 shadow-sm rounded-4 overflow-hidden h-100 d-flex flex-column">
+          <div class="ratio ratio-4x3">
+            <img src="assets/images/proyek/proyek (6).jpeg" class="img-fluid object-fit-cover w-100 h-100" alt="Tenda Panggung Hajatan">
+          </div>
+          <div class="p-3">
+            <h5 class="fw-bold mb-1">Tenda Panggung Konser</h5>
+            <p class="text-muted mb-0">Tenda tinggi dengan panggung besar dan lighting untuk konser rakyat atau hajatan massal.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Proyek 7 -->
+      <div class="col-md-4" data-aos="zoom-in" data-aos-delay="400">
+        <div class="card border-0 shadow-sm rounded-4 overflow-hidden h-100 d-flex flex-column">
+          <div class="ratio ratio-4x3">
+            <img src="assets/images/proyek/proyek (4).jpeg" class="img-fluid object-fit-cover w-100 h-100" alt="Tenda Custom Branding">
+          </div>
+          <div class="p-3">
+            <h5 class="fw-bold mb-1">Tenda Aesthetic Custom</h5>
+            <p class="text-muted mb-0">Tenda custom warna putih yang dipesan sesuai permintaan pelanggan.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+<!-- ======= Klien Kami - Logo Lengkung Responsif ======= -->
+<section class="section bg-white py-5">
+  <div class="container text-center">
+    <h3 class="fw-bold mb-5 text-gradient" data-aos="fade-up">
+      Dipercaya oleh Klien Ternama
+    </h3>
+
+    <!-- Desktop Layout (lengkung ⌒) -->
+    <div class="d-none d-md-block position-relative" style="height: 320px;">
+      <!-- Logo kiri atas -->
+      <div class="position-absolute text-center" data-aos="zoom-in" style="top: 0; left: 10%;">
+        <div class="logo-circle">
+          <img src="assets/images/logo/persebaya-surabaya-logo-png_seeklogo-187096.png" alt="Persebaya">
+        </div>
+        <div class="logo-label">Persebaya</div>
+      </div>
+
+      <!-- Logo kanan atas -->
+      <div class="position-absolute text-center" data-aos="zoom-in" data-aos-delay="100" style="top: 0; right: 10%;">
+        <div class="logo-circle">
+          <img src="assets/images/logo/upn-surabaya-seeklogo.png" alt="UPN Surabaya">
+        </div>
+        <div class="logo-label">UPN Surabaya</div>
+      </div>
+
+      <!-- Logo kiri tengah -->
+      <div class="position-absolute text-center" data-aos="zoom-in" data-aos-delay="200" style="top: 30%; left: 25%;">
+        <div class="logo-circle small">
+          <img src="assets/images/logo/mcdonalds-seeklogo.png" alt="McDonald's">
+        </div>
+        <div class="logo-label small">McDonald's</div>
+      </div>
+
+      <!-- Logo kanan tengah -->
+      <div class="position-absolute text-center" data-aos="zoom-in" data-aos-delay="300" style="top: 30%; right: 25%;">
+        <div class="logo-circle">
+          <img src="assets/images/logo/honda-logo-png_seeklogo-284902.png" alt="Honda">
+        </div>
+        <div class="logo-label">Honda</div>
+      </div>
+
+      <!-- Logo bawah tengah -->
+      <div class="position-absolute text-center start-50 translate-middle-x" data-aos="zoom-in" data-aos-delay="400" style="bottom: 0;">
+        <div class="logo-circle">
+          <img src="assets/images/logo/royal-plaza-surabaya-seeklogo.png" alt="Royal Plaza">
+        </div>
+        <div class="logo-label">Royal Plaza</div>
+      </div>
+    </div>
+
+    <!-- Mobile Layout: Grid -->
+    <div class="d-md-none">
+      <div class="row g-4 justify-content-center">
+        <!-- Persebaya -->
+        <div class="col-4 text-center" data-aos="zoom-in">
+          <div class="logo-circle">
+            <img src="assets/images/logo/persebaya-surabaya-logo-png_seeklogo-187096.png" alt="Persebaya">
+          </div>
+          <div class="logo-label">Persebaya</div>
+        </div>
+        <!-- UPN -->
+        <div class="col-4 text-center" data-aos="zoom-in" data-aos-delay="100">
+          <div class="logo-circle">
+            <img src="assets/images/logo/upn-surabaya-seeklogo.png" alt="UPN Surabaya">
+          </div>
+          <div class="logo-label">UPN</div>
+        </div>
+        <!-- McD -->
+        <div class="col-4 text-center" data-aos="zoom-in" data-aos-delay="200">
+          <div class="logo-circle small">
+            <img src="assets/images/logo/mcdonalds-seeklogo.png" alt="McDonald's">
+          </div>
+          <div class="logo-label small">McD</div>
+        </div>
+        <!-- Honda -->
+        <div class="col-4 text-center" data-aos="zoom-in" data-aos-delay="300">
+          <div class="logo-circle">
+            <img src="assets/images/logo/honda-logo-png_seeklogo-284902.png" alt="Honda">
+          </div>
+          <div class="logo-label">Honda</div>
+        </div>
+        <!-- Royal Plaza -->
+        <div class="col-4 text-center" data-aos="zoom-in" data-aos-delay="400">
+          <div class="logo-circle">
+            <img src="assets/images/logo/royal-plaza-surabaya-seeklogo.png" alt="Royal Plaza">
+          </div>
+          <div class="logo-label">Royal Plaza</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+
+
+
+
+
+<!-- ======= End Proyek Kami ======= -->
+
+
+       
+        
+        <!-- ======= Testimoni Pelanggan ======= -->
+<section class="section bg-white py-5" id="testimonials">
+  <div class="container">
+    <div class="row mb-5 text-center">
+      <div class="col-lg-8 mx-auto">
+        <span class="text-uppercase fw-semibold text-primary" data-aos="fade-up">Testimoni</span>
+        <h2 class="fw-bold mb-3" data-aos="fade-up" data-aos-delay="100">Apa Kata Mereka Tentang Kami</h2>
+        <p class="text-muted fs-5" data-aos="fade-up" data-aos-delay="200">
+          Pelanggan kami puas dengan layanan dan kualitas tenda dari CV. Karunia Abadi.
+        </p>
+      </div>
+    </div>
+
+    <div class="row g-4">
+      
+      <!-- Testimoni 1 -->
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="0">
+        <div class="bg-light p-4 rounded-4 shadow-sm h-100">
+          <p class="fst-italic text-muted">“Pelayanannya ramah, pengiriman tepat waktu, dan hasil tendanya sangat memuaskan. Sangat direkomendasikan untuk acara besar.”</p>
+          <div class="d-flex align-items-center mt-4">
+            <img src="assets/images/orang/orang1.jpeg" class="rounded-circle" width="50" height="50" alt="Client 1">
+            <div class="ms-3">
+              <strong class="d-block">Sugeng trisno</strong>
+              <span class="text-muted small">EO Surabaya</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Testimoni 2 -->
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="bg-light p-4 rounded-4 shadow-sm h-100">
+          <p class="fst-italic text-muted">“Saya order canopy untuk toko, hasilnya rapi dan kokoh. Sesuai dengan desain yang saya minta. Terima kasih Karunia Abadi.”</p>
+          <div class="d-flex align-items-center mt-4">
+            <img src="assets/images/orang/orang6.jpeg" class="rounded-circle" width="50" height="50" alt="Client 2">
+            <div class="ms-3">
+              <strong class="d-block">Johan Kautsar</strong>
+              <span class="text-muted small">Pemilik Toko</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Testimoni 3 -->
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="bg-light p-4 rounded-4 shadow-sm h-100">
+          <p class="fst-italic text-muted">“Tenda pleton yang saya pesan sesuai ekspektasi dan tahan cuaca ekstrem. Cocok untuk kebutuhan lapangan.”</p>
+          <div class="d-flex align-items-center mt-4">
+            <img src="assets/images/orang/orang5.jpeg" class="rounded-circle" width="50" height="50" alt="Client 3">
+            <div class="ms-3">
+              <strong class="d-block">Michael R.</strong>
+              <span class="text-muted small">Instansi Pemerintah</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Testimoni 4 -->
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+        <div class="bg-light p-4 rounded-4 shadow-sm h-100">
+          <p class="fst-italic text-muted">“Desain tenda café-nya keren dan beda dari yang lain. Bikin usaha saya makin menarik perhatian pelanggan.”</p>
+          <div class="d-flex align-items-center mt-4">
+            <img src="assets/images/orang/orang4.jpeg" class="rounded-circle" width="50" height="50" alt="Client 4">
+            <div class="ms-3">
+              <strong class="d-block">Kausar Faiq</strong>
+              <span class="text-muted small">Pemilik Kafe</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Testimoni 5 -->
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="400">
+        <div class="bg-light p-4 rounded-4 shadow-sm h-100">
+          <p class="fst-italic text-muted">“Proses pemesanan sangat mudah, timnya komunikatif, dan hasil tendanya premium. Tidak menyesal pakai Karunia Abadi.”</p>
+          <div class="d-flex align-items-center mt-4">
+            <img src="assets/images/orang/orang3.jpeg" class="rounded-circle" width="50" height="50" alt="Client 5">
+            <div class="ms-3">
+              <strong class="d-block">Putri Jamine</strong>
+              <span class="text-muted small">Event Organizer</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Testimoni 6 -->
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="500">
+        <div class="bg-light p-4 rounded-4 shadow-sm h-100">
+          <p class="fst-italic text-muted">“Saya pesan tenda sarnafil custom untuk branding perusahaan. Hasil cetaknya tajam dan bahan sangat bagus.”</p>
+          <div class="d-flex align-items-center mt-4">
+            <img src="assets/images/orang/orang2.jpeg" class="rounded-circle" width="50" height="50" alt="Client 6">
+            <div class="ms-3">
+              <strong class="d-block">Annisa Cantika</strong>
+              <span class="text-muted small">Marketing Manager</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ======= Temukan Kami di Sini ======= -->
+<section id="location" class="py-5 bg-light">
+  <div class="container">
+    <div class="text-center mb-4" data-aos="fade-up">
+      <h2 class="fw-bold">Temukan Kami di Sini</h2>
+      <p class="text-muted mt-2">
+        Kunjungi lokasi kami dan lihat langsung kualitas tenda unggulan produksi <strong>Karunia Abadi</strong>. 
+        Kami siap memberikan solusi terbaik untuk kebutuhan acara Anda.
+      </p>
+    </div>
+
+    <!-- MAP -->
+    <div class="ratio ratio-16x9 rounded-4 overflow-hidden shadow-sm" data-aos="zoom-in" data-aos-delay="100">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d989.1835995209713!2d112.71767286961206!3d-7.383633369554705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7e483d2b5fa4f%3A0xf4d221eec235fdb5!2sSikep%2C%20Keboansikep%2C%20Gedangan%2C%20Sidoarjo%20Regency%2C%20East%20Java%2061254!5e0!3m2!1sen!2sid!4v1751518073314!5m2!1sen!2sid"
+        width="100%"
+        height="100%"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+
+    <!-- BUTTON -->
+    <div class="text-center mt-3" data-aos="fade-up" data-aos-delay="200">
+      <a href="https://maps.app.goo.gl/jeZrntJU24c49stR9" target="_blank" class="btn btn-warning shadow-sm px-4 py-2">
+        <i class="bi bi-geo-alt-fill me-1"></i> Buka di Google Maps
+      </a>
+    </div>
+  </div>
+  </div>
+  </div>
+</section>
+
+
+        
+        <!-- ======= Hubungi Kami ======= -->
+<section class="section bg-light" id="contact">
+  <div class="container">
+    <div class="row mb-5 text-center">
+      <div class="col-lg-8 mx-auto">
+        <span class="text-uppercase text-primary fw-semibold" data-aos="fade-up">Hubungi Kami</span>
+        <h2 class="fw-bold mb-3" data-aos="fade-up" data-aos-delay="100">Kami Siap Membantu Anda</h2>
+        <p class="text-muted fs-5" data-aos="fade-up" data-aos-delay="200">
+          Silakan hubungi tim kami untuk pemesanan, konsultasi desain tenda, atau pertanyaan lainnya.
+        </p>
+      </div>
+    </div>
+
+    <div class="row g-4">
+      <!-- Kontak Info -->
+      <div class="col-lg-5" data-aos="fade-right">
+        <div class="bg-white rounded-4 shadow-sm p-4 h-100">
+          <div class="mb-4 d-flex align-items-start gap-3">
+            <i class="bi bi-telephone-fill fs-3 text-primary"></i>
+            <div>
+              <strong class="d-block">Telepon</strong>
+              <span>+62 877-9825-6840</span>
+            </div>
+          </div>
+          <div class="mb-4 d-flex align-items-start gap-3">
+            <i class="bi bi-envelope-fill fs-3 text-primary"></i>
+            <div>
+              <strong class="d-block">Email</strong>
+              <span>ib.iwanbecham@gmail.com</span>
+            </div>
+          </div>
+          <div class="d-flex align-items-start gap-3">
+            <i class="bi bi-geo-alt-fill fs-3 text-primary"></i>
+            <div>
+              <strong class="d-block">Alamat</strong>
+              <address class="mb-0">Griya Permata Gedangan F2-11, Desa Keboansikep, Kecamatan Gedangan, Indonesia</address>
+            </div>
+          </div>
+        </div>
+      </div>
+
+     <!-- ======= Formulir Kontak ======= -->
+<div class="col-lg-7" data-aos="fade-left">
+  <div class="bg-white rounded-4 shadow-sm p-4">
+    <!-- ✅ Formulir -->
+    <form action="https://submit-form.com/q6j1CJ4Jf" method="POST" 
+          class="row g-3" 
+          target="hidden_iframe" 
+          onsubmit="return showThankYou(this);">
+
+      <!-- ✅ Konfigurasi Formspark -->
+      <input type="hidden" name="_redirect" value="">
+      <input type="hidden" name="_email.subject" value="Pesan Baru dari Website Karunia Abadi">
+      <input type="hidden" name="_email.template.title" value="Formulir Kontak Karunia Abadi">
+      <input type="hidden" name="_email.from" value="no-reply@karuniaabadi.com">
+
+      <!-- ✅ Field Formulir -->
+      <div class="col-md-6">
+        <label for="name" class="form-label">Nama</label>
+        <input type="text" class="form-control" id="name" name="Nama" required>
+      </div>
+
+      <div class="col-md-6">
+        <label for="email" class="form-label">Email</label>
+        <input type="email" class="form-control" id="email" name="Email" required>
+      </div>
+
+      <div class="col-md-12">
+        <label for="subject" class="form-label">Subjek</label>
+        <input type="text" class="form-control" id="subject" name="Subjek">
+      </div>
+
+      <div class="col-md-12">
+        <label for="message" class="form-label">Pesan</label>
+        <textarea class="form-control" id="message" name="Pesan" rows="5" required></textarea>
+      </div>
+
+      <div class="col-12">
+        <button type="submit" class="btn btn-primary px-4">Kirim Pesan</button>
+      </div>
+    </form>
+
+    <!-- ✅ Notifikasi -->
+    <div id="thanksMessage" class="alert alert-success d-none mt-3">
+      Terima kasih, pesan Anda telah dikirim!
+    </div>
+
+    <!-- ✅ Iframe tersembunyi -->
+    <iframe name="hidden_iframe" style="display:none;"></iframe>
+  </div>
+</div>
+
+<!-- ✅ Script -->
+<script>
+  function showThankYou(form) {
+    const msg = document.getElementById("thanksMessage");
+    msg.classList.remove("d-none");
+
+    setTimeout(() => {
+      msg.classList.add("d-none");
+      form.reset();
+    }, 3000); // 3 detik
+
+    return true;
+  }
+</script>
+    
+     
+</section>
+<!-- ======= Akhir Contact ======= -->
+<!-- ======= Footer Karunia Abadi (Senada Header) ======= -->
+<footer class="pt-5 mt-5 text-white" style="
+  background: rgba(15, 15, 15, 0.9);
+  backdrop-filter: blur(10px);
+  border-top: 1px solid rgba(255,255,255,0.05);
+">
+  <div class="container">
+    <div class="row gy-4 justify-content-between">
+
+      <!-- Logo & Deskripsi -->
+      <div class="col-md-4">
+        <a class="navbar-brand d-flex align-items-center mb-3" href="index.html">
+          <img src="assets/images/headerlogo.jpg" 
+               alt="Karunia Abadi" 
+               class="me-2" 
+               height="40"
+               style="border-radius: 6px; box-shadow: 0 2px 6px rgba(0,0,0,0.5);" />
+          <span class="fw-bold fs-4"
+                style="background: linear-gradient(135deg, #f9d423, #ff4e50);
+                       -webkit-background-clip: text;
+                       -webkit-text-fill-color: transparent;">
+            Karunia Abadi
+          </span>
+        </a>
+        <p class="small text-white-50" style="max-width: 300px;">
+          Spesialis tenda sejak 2004: Limas, Kerucut, Canopy, Payung Taman, & Custom. Solusi profesional untuk event & bisnis.
+        </p>
+        <div class="d-flex gap-3 mt-3">
+          <a href="https://instagram.com/cv.karuniaabadi" class="text-white fs-5" target="_blank"><i class="bi bi-instagram"></i></a>
+          <a href="https://wa.me/6287798256840" class="text-white fs-5" target="_blank"><i class="bi bi-whatsapp"></i></a>
+        </div>
+      </div>
+
+      <!-- Navigasi -->
+      <div class="col-md-3">
+        <h5 class="fw-semibold text-white mb-3">Navigasi</h5>
+        <ul class="list-unstyled">
+          <li><a href="#home" class="text-white-50 text-decoration-none hover-glow">Home</a></li>
+          <li><a href="#about" class="text-white-50 text-decoration-none hover-glow">About</a></li>
+          <li><a href="#product" class="text-white-50 text-decoration-none hover-glow">Product</a></li>
+          <li><a href="#project" class="text-white-50 text-decoration-none hover-glow">Project</a></li>
+          <li><a href="#contact" class="text-white-50 text-decoration-none hover-glow">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Kontak -->
+      <div class="col-md-4">
+        <h5 class="fw-semibold text-white mb-3">Kontak</h5>
+        <p class="mb-2 text-white-50"><i class="bi bi-geo-alt-fill me-2"></i>Griya Permata Gedangan F2-11, Desa Keboansikep, Kecamatan Gedangan, Indonesia</p>
+        <p class="mb-2 text-white-50"><i class="bi bi-envelope-fill me-2"></i>ib.iwanbecham@gmail.com</p>
+        <p class="mb-2 text-white-50"><i class="bi bi-telephone-fill me-2"></i>+62 877-9825-6840</p>
+      </div>
+
+    </div>
+
+    <hr class="border-white-10 mt-5 mb-3">
+
+    <div class="text-center text-white-50 small">
+      &copy; <script>document.write(new Date().getFullYear());</script> CV. Karunia Abadi. All rights reserved.
+    </div>
+  </div>
+</footer>
+
+
+    
+    <!-- ======= Back to Top =======-->
+    <button id="back-to-top"><i class="bi bi-arrow-up-short"></i></button>
+    <!-- End Back to top-->
+    
+   
+  </body>
+</html>
