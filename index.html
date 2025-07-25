@@ -39,7 +39,6 @@
       text-shadow: 0 0 8px rgba(255, 255, 255, 0.7);
       transform: scale(1.05);
     }
-
     /* Logo Klien */
     .logo-circle {
       width: 80px;
@@ -51,6 +50,9 @@
       overflow: hidden;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
       transition: transform 0.3s ease, box-shadow 0.3s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
     .logo-circle img {
       width: 100%;
@@ -75,11 +77,131 @@
       height: 60px;
       padding: 4px;
     }
-
     .text-gradient {
       background: linear-gradient(to right, #f9d423, #ff4e50);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
+    }
+    /* RESPONSIVE IMPROVEMENTS */
+    @media (max-width: 991.98px) {
+      .navbar .navbar-collapse {
+        background: rgba(15, 15, 15, 0.98);
+        padding: 1rem 0;
+        border-radius: 0 0 16px 16px;
+      }
+      .navbar .navbar-nav .nav-link {
+        padding: 0.75rem 1rem;
+        font-size: 1.1rem;
+      }
+    }
+    @media (max-width: 767.98px) {
+      .logo-circle, .logo-circle.small {
+        width: 48px !important;
+        height: 48px !important;
+        padding: 2px !important;
+      }
+      .logo-label, .logo-label.small {
+        font-size: 11px !important;
+      }
+      .section {
+        padding-top: 2rem !important;
+        padding-bottom: 2rem !important;
+      }
+      .display-6, .display-5, h1, h2, h3 {
+        font-size: 1.3rem !important;
+      }
+      .produk__karunia .row, .about__karunia .row, #product .row, #project .row, #testimonials .row {
+        flex-direction: column !important;
+      }
+      .produk__karunia .col-lg-6, .about__karunia .col-lg-6, #product .col-md-6, #project .col-md-4, #testimonials .col-md-6, #testimonials .col-lg-4 {
+        max-width: 100% !important;
+        flex: 0 0 100% !important;
+      }
+      .img-fluid, .rounded-4, .shadow-lg, .shadow-sm {
+        width: 100% !important;
+        height: auto !important;
+        max-width: 100% !important;
+      }
+      .thumb-img {
+        width: 40px !important;
+        height: 40px !important;
+      }
+      .ratio-4x3, .ratio-16x9 {
+        height: auto !important;
+        min-height: 180px !important;
+      }
+      .footer .row > div {
+        margin-bottom: 1.5rem;
+      }
+      .navbar-brand span {
+        font-size: 1.1rem !important;
+      }
+      .navbar-brand img {
+        height: 32px !important;
+      }
+      .bg-white.bg-opacity-75, .bg-light {
+        padding: 1rem !important;
+      }
+      .p-4 {
+        padding: 1rem !important;
+      }
+      .rounded-4 {
+        border-radius: 10px !important;
+      }
+      .shadow, .shadow-sm, .shadow-lg {
+        box-shadow: 0 2px 8px rgba(0,0,0,0.08) !important;
+      }
+      .form-label, .form-control, textarea, input {
+        font-size: 0.95rem !important;
+      }
+      .btn {
+        font-size: 1rem !important;
+        padding: 0.5rem 1.2rem !important;
+      }
+      #back-to-top {
+        right: 12px !important;
+        bottom: 12px !important;
+        width: 38px !important;
+        height: 38px !important;
+        font-size: 1.3rem !important;
+      }
+    }
+    @media (max-width: 575.98px) {
+      .container, .container-fluid {
+        padding-left: 8px !important;
+        padding-right: 8px !important;
+      }
+      .navbar {
+        padding-left: 0.5rem !important;
+        padding-right: 0.5rem !important;
+      }
+      .footer .row > div {
+        margin-bottom: 1rem;
+      }
+      .logo-circle, .logo-circle.small {
+        width: 36px !important;
+        height: 36px !important;
+      }
+      .logo-label, .logo-label.small {
+        font-size: 9px !important;
+      }
+      .thumb-img {
+        width: 28px !important;
+        height: 28px !important;
+      }
+      .rounded-4 {
+        border-radius: 6px !important;
+      }
+      .p-4 {
+        padding: 0.7rem !important;
+      }
+      .form-label, .form-control, textarea, input {
+        font-size: 0.9rem !important;
+      }
+      .btn {
+        font-size: 0.95rem !important;
+        padding: 0.4rem 1rem !important;
+      }
     }
   </style>
 
