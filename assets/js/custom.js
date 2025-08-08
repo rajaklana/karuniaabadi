@@ -108,6 +108,12 @@ const navbarInit = () => {
 
 // ======= Marquee =======
 const logoMarqueeInit = () => {
+  // Check if GSAP is available
+  if (typeof gsap === 'undefined') {
+    console.warn('GSAP not loaded, skipping logo marquee initialization');
+    return;
+  }
+  
   const wrapper = document.querySelector(".logo-wrapper");
   const boxes = gsap.utils.toArray(".logo-item");
   
@@ -236,6 +242,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // ======= Swiper =======
 const swiperInit = () => {
+  // Check if Swiper is available
+  if (typeof Swiper === 'undefined') {
+    console.warn('Swiper not loaded, skipping swiper initialization');
+    return;
+  }
+  
   var swiper = new Swiper(".testimonialSwiper", {
     slidesPerView: 1,
     speed: 700,
@@ -302,6 +314,12 @@ document.addEventListener("DOMContentLoaded", swiperInit);
 
 // ======= Glightbox =======
 const glightBoxInit = () => {
+  // Check if GLightbox is available
+  if (typeof GLightbox === 'undefined') {
+    console.warn('GLightbox not loaded, skipping lightbox initialization');
+    return;
+  }
+  
   const lightbox = GLightbox({
     touchNavigation: true,
     loop: true,
@@ -325,27 +343,7 @@ const bsOffCanvasInit = () => {
 };
 document.addEventListener("DOMContentLoaded", bsOffCanvasInit);
 
-// ======= Back To Top =======
-const backToTopInit = () => {
-  const backToTopButton = document.getElementById("back-to-top");
-  if (backToTopButton) {
-    window.addEventListener("scroll", () => {
-      if (window.scrollY > 170) {
-        backToTopButton.classList.add("show");
-      } else {
-        backToTopButton.classList.remove("show");
-      }
-    });
-    backToTopButton.addEventListener("click", () => {
-      window.scrollTo({
-        top: 0,
-        behavior: "smooth",
-      });
-    });
-  }
-};
 
-document.addEventListener("DOMContentLoaded", backToTopInit);
 
 
 // ======= Inline SVG =======
@@ -386,6 +384,12 @@ document.addEventListener("DOMContentLoaded", inlineSvgInit);
 
 // ======= AOS =======
 const aosInit = () => {
+  // Check if AOS is available
+  if (typeof AOS === 'undefined') {
+    console.warn('AOS not loaded, skipping AOS initialization');
+    return;
+  }
+  
   AOS.init({
     duration: 800,
     easing: 'slide',
